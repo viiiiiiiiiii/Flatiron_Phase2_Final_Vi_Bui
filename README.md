@@ -1,4 +1,4 @@
-![image.png](kingcounty.jpeg)
+<img src='images/King County.jpeg'>
 
 **King County, WA, U.S.A.**  
 
