@@ -1,4 +1,4 @@
-![image.png](attachment:image.png)
+![image.png](kingcounty.jpeg)
 
 **King County, WA, U.S.A.**  
 
