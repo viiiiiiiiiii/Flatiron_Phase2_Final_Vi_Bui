@@ -8104,19 +8104,14 @@ create_vif_dct(X_train_scaled[['const', 'bedrooms', 'bathrooms', 'sqft_living','
      'zipcode_98072': 1.047976247703205}
 
 
-
+<img src='images/Condition Grade and Residential Building Grades.png'>
 
 ```python
 # Check linearity and residual normality 
 
 sm.graphics.qqplot(model_viii.resid, dist=stats.norm, line='45', fit=True);
 ```
-
-
     
-![png](output_150_0.png)
-    
-
 
 # FINAL MODEL
 
@@ -8135,6 +8130,7 @@ sm.graphics.qqplot(model_viii.resid, dist=stats.norm, line='45', fit=True);
 
 Excluding zipcodes, **Square Feet Living, Grade, and Condition are the strongest determinants of price** 
 
+<img src='images/Final Model.png'>
 
 ```python
 model_final = sm.OLS(y_train, X_train_scaled).fit()
@@ -8605,7 +8601,7 @@ sm.graphics.qqplot(model_final.resid, dist=stats.norm, line='45', fit=True);
 
 
     
-![png](output_156_0.png)
+<img src='images/Residual Normality.png'>
     
 
 
@@ -9057,6 +9053,8 @@ After building models to evaluate the relationship between price and several fac
 - The grade of a home (1-13) is a strong determinant of price. **Every grade increase costs approximately \\$31,571** 
 - The condition (1-5) is also a strong determinant; **Every condition level increase costs approximately \\$15,007** 
 - **If the home has been renovated, the price is expected to be approximately \\$9812 more**
+
+<img src='images/Condition Grade and Residential Building Grades.png'>
 
 # Future Work 
 
